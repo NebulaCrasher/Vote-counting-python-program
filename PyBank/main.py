@@ -55,7 +55,7 @@ with open(budgetpath, encoding= "utf8") as budgetfile:
         monthlychanges_difference.append(monthlychanges[profit]-monthlychanges[profit-1])
     
     #Sum the total of the differences between the monthly changes and divide by the total month count
-    averagemonthlychanges = sum(monthlychanges_difference)/len(monthlychanges)
+    averagemonthlychanges = sum(monthlychanges_difference)/(len(monthlychanges)-1)
 
 #Output to terminal and write file to folder    
 print("Financial Analysis")
